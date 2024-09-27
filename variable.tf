@@ -34,29 +34,29 @@ variable "storage_account_name" {
   type        = string
 }
 
-variable "aks_name" {
-  description = "AKS Cluster name"
-  type        = string
-}
+# variable "aks_name" {
+#   description = "AKS Cluster name"
+#   type        = string
+# }
 
-variable "dns_prefix" {
-  description = "DNS prefix for AKS"
-  type        = string
-}
+# variable "dns_prefix" {
+#   description = "DNS prefix for AKS"
+#   type        = string
+# }
 
-variable "node_count" {
-  description = "Number of nodes in the AKS cluster"
-  type        = number
-  default     = 3
-}
+# variable "node_count" {
+#   description = "Number of nodes in the AKS cluster"
+#   type        = number
+#   default     = 3
+# }
 
-variable "vm_size" {
-  description = "VM size for AKS nodes"
-  type        = string
-  default     = "Standard_DS2_v2"
-}
+# variable "vm_size" {
+#   description = "VM size for AKS nodes"
+#   type        = string
+#   default     = "Standard_DS2_v2"
+# }
 
-variable "api_server_authorized_ip_ranges" {
-  description = "Authorized IP ranges for AKS API server"
-  type        = list(string)
-}
+# variable "api_server_authorized_ip_ranges" {
+#   description = "Authorized IP ranges for AKS API server"
+#   type        = list(string)
+# }
