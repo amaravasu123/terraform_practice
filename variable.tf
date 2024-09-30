@@ -53,7 +53,7 @@ variable "node_count" {
 variable "vm_size" {
   description = "VM size for AKS nodes"
   type        = string
-  default     = "D2pds_v5"
+  default     = "standard_D2pds_v5"
 }
 
 variable "api_server_authorized_ip_ranges" {
