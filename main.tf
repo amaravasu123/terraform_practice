@@ -23,14 +23,14 @@ module "storage_account" {
   location              = module.resource_group.resource_group_location
 }
 
-# module "aks" {
-#   source                      = "./modules/aks"
-#   aks_name                    = var.aks_name
-#   dns_prefix                  = var.dns_prefix
-#   node_count                  = var.node_count
-#   vm_size                     = var.vm_size
-#   resource_group_name         = module.resource_group.resource_group_name
-#   location                    = module.resource_group.resource_group_location
-#   subnet_id                   = module.vnet.subnet_id
-#   api_server_authorized_ip_ranges = var.api_server_authorized_ip_ranges
-# }
+module "aks" {
+  source                      = "./modules/aks"
+  aks_name                    = var.aks_name
+  dns_prefix                  = var.dns_prefix
+  node_count                  = var.node_count
+  vm_size                     = var.vm_size
+  resource_group_name         = module.resource_group.resource_group_name
+  location                    = module.resource_group.resource_group_location
+  subnet_id                   = module.vnet.subnet_id
+  api_server_authorized_ip_ranges = var.api_server_authorized_ip_ranges
+}

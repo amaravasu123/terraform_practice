@@ -47,13 +47,13 @@ variable "dns_prefix" {
 variable "node_count" {
   description = "Number of nodes in the AKS cluster"
   type        = number
-  default     = 3
+  default     = 1
 }
 
 variable "vm_size" {
   description = "VM size for AKS nodes"
   type        = string
-  default     = "Standard_DS2_v2"
+  default     = "D2pds_v5"
 }
 
 variable "api_server_authorized_ip_ranges" {
